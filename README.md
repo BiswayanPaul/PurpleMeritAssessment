@@ -223,22 +223,47 @@ PurpleMeritAssessment/
 └── README.md
 ```
 
+## Live Deployment
+
+### 🌐 Live Application URLs
+- **Frontend**: [https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app](https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app)
+- **Backend API**: [https://purplemeritassessment.onrender.com](https://purplemeritassessment.onrender.com)
+- **API Base URL**: `https://purplemeritassessment.onrender.com/api`
+
+### 🚀 Quick Access
+- **Login/Register**: [https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app/login](https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app/login)
+- **Dashboard**: [https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app](https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app) (after login)
+
 ## Deployment
 
-### Backend Deployment (Render/Railway/Heroku)
-1. Connect your GitHub repository
-2. Set environment variables
-3. Deploy with Node.js buildpack
+### Backend Deployment (Render)
+1. **Platform**: [Render.com](https://render.com)
+2. **Repository**: Connect GitHub repository
+3. **Service Type**: Web Service
+4. **Build Command**: `npm install`
+5. **Start Command**: `npm start`
+6. **Environment Variables**:
+   ```env
+   NODE_ENV=production
+   MONGO_URI=your_mongodb_atlas_connection_string
+   JWT_SECRET=your_jwt_secret
+   FRONTEND_URL=https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app
+   ```
 
-### Frontend Deployment (Vercel/Netlify)
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set output directory: `dist`
+### Frontend Deployment (Vercel)
+1. **Platform**: [Vercel.com](https://vercel.com)
+2. **Repository**: Connect GitHub repository
+3. **Build Command**: `npm run build`
+4. **Output Directory**: `dist`
+5. **Environment Variables**:
+   ```env
+   VITE_API_BASE_URL=https://purplemeritassessment.onrender.com
+   ```
 
 ### Database Deployment (MongoDB Atlas)
-1. Create MongoDB Atlas cluster
-2. Get connection string
-3. Update backend environment variables
+1. **Platform**: [MongoDB Atlas](https://mongodb.com/atlas)
+2. **Cluster**: Cloud-hosted MongoDB cluster
+3. **Connection**: Get connection string and update backend environment variables
 
 ## License
 
