@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <nav className="bg-white shadow p-4 flex justify-between">
-        <h1 className="font-bold text-xl">PurpleMerit</h1>
+        <h1 className="font-bold text-xl">GreenCart</h1>
         <div>
           {user ? (
             <>
