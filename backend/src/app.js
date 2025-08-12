@@ -18,7 +18,10 @@ app.use(cors({
     origin: process.env.NODE_ENV === 'production'
         ? [
             'https://purple-merit-assessment-bay.vercel.app',
-            'https://purple-merit-assessment-oey9hdjkb-biswayanpauls-projects.vercel.app'
+            'https://purple-merit-assessment-oey9hdjkb-biswayanpauls-projects.vercel.app',
+            'https://purple-merit-assessment-bbknsd3th-biswayanpauls-projects.vercel.app',
+            /^https:\/\/purple-merit-assessment.*\.vercel\.app$/,
+            /^https:\/\/.*purple.*merit.*assessment.*\.vercel\.app$/
         ]
         : ['http://localhost:3000', 'http://127.0.0.1:3000'],
     credentials: true,
