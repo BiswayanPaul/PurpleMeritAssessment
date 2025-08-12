@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// Use Vite proxy for development - no environment variables needed
+// Use deployed backend URL for production, localhost for development
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000', // Empty baseURL - Vite proxy handles /api routing
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://purplemeritassessment.onrender.com',
     timeout: 10000,
     withCredentials: true, // Always send cookies with requests
 });
